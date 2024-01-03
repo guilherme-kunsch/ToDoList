@@ -58,12 +58,23 @@ input {
   justify-content: space-between;
 }
 
-.done {
-  background: #395169;
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 0 0 0.5rem;
+  background-color: aquamarine;
+  color: #102f5e;
+  font-size: 16px;
+  align-items: center;
 }
 
-.done h3 {
-  color: #fff;
-  text-decoration: line-through;
-  font-style: italic;
+.tarefa.mostrar {
+  display: flex; /* Mostrar a tarefa quando a classe 'mostrar' estiver presente */
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
 }
